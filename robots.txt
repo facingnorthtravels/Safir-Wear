@@ -1,0 +1,30 @@
+# Safir Wear — robots.txt
+# https://www.safirwear.com/robots.txt
+
+User-agent: *
+Allow: /
+Disallow: /css/
+Disallow: /js/
+
+# Sitemap
+Sitemap: https://www.safirwear.com/sitemap.xml
+
+# AI Crawler Management — allow AI visibility for brand awareness
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+# Block aggressive training-only crawlers
+User-agent: Bytespider
+Disallow: /
+
+User-agent: CCBot
+Disallow: /

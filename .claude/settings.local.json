@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(taskkill /F /IM node.exe)",
+      "Bash(taskkill //F //IM node.exe)",
+      "Read(//d/Wiser 2026/nexus-iq/**)",
+      "Bash(npm run:*)",
+      "WebSearch"
+    ]
+  }
+}
