@@ -5,7 +5,19 @@
       "Bash(taskkill //F //IM node.exe)",
       "Read(//d/Wiser 2026/nexus-iq/**)",
       "Bash(npm run:*)",
-      "WebSearch"
+      "WebSearch",
+      "Bash(git add:*)",
+      "Bash(git commit -m ':*)",
+      "Read(//c/Users/HP/Desktop/extreme-commerce/src/**)",
+      "Read(//c/Users/HP/Desktop/extreme-commerce/**)",
+      "Bash(node -e ' *)",
+      "Bash(jobs -l)",
+      "Bash(timeout 30 npx next dev -p 3099)",
+      "Bash(\"/c/Program Files/Google/Chrome/Application/chrome.exe\" --headless --disable-gpu --hide-scrollbars --window-size=1440,900 --screenshot=/tmp/sw-hero.png --virtual-time-budget=5000 \"http://localhost:8765/index.html\")",
+      "Bash(cp /tmp/sw-hero.png \"/d/safir-wear/_sw-hero.png\")",
+      "Bash(\"/c/Program Files/Google/Chrome/Application/chrome.exe\" --headless --disable-gpu --hide-scrollbars --window-size=1440,4200 --disable-javascript --screenshot=/tmp/sw-nojs.png \"http://localhost:8765/index.html\")",
+      "Bash(cp /tmp/sw-nojs.png \"/d/safir-wear/_sw-nojs.png\")",
+      "Bash(node _cdp-shot.js _sw-full.png)"
     ]
   }
 }

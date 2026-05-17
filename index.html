@@ -221,14 +221,14 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <!-- PRELOADER -->
 <div class="preloader">
-  <div class="preloader-logo">Safir Wear</div>
+  <img class="preloader-logo" src="assets/logo-lockup.png" alt="Safir Wear">
   <div class="preloader-bar-wrap"><div class="preloader-bar"></div></div>
 </div>
 
@@ -243,13 +243,14 @@
 
 <!-- ─── NAV ─── -->
 <nav id="nav" aria-label="Main navigation">
-  <a href="index.html" class="nav-logo">SW / Safir Wear</a>
   <ul class="nav-links">
     <li><a href="services.html">Services</a></li>
-    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="portfolio.html">Work</a></li>
     <li><a href="about.html">About</a></li>
-    <li><a href="contact.html">Contact</a></li>
   </ul>
+  <a href="index.html" class="nav-logo" aria-label="Safir Wear — home">
+    <img src="assets/logo-mark.png" alt="Safir Wear">
+  </a>
   <div class="nav-right">
     <a href="contact.html" class="btn-nav magnetic">Get a Quote</a>
     <div class="nav-burger" id="burger"><span></span><span></span><span></span></div>
@@ -259,70 +260,74 @@
 <div class="mob-menu" id="mobMenu">
   <a href="index.html">Home</a>
   <a href="services.html">Services</a>
-  <a href="portfolio.html">Portfolio</a>
+  <a href="portfolio.html">Work</a>
   <a href="about.html">About</a>
   <a href="contact.html">Contact</a>
   <a href="contact.html" class="mob-cta">Get a Quote</a>
 </div>
 
 <!-- ═══════════════════════════════════════
-     HERO
+     HERO — auto-rotating slideshow
 ════════════════════════════════════════ -->
-<section id="hero">
-  <div class="hero-left">
-    <div class="hero-pill">
-      <div class="hero-pill-dot"></div>
-      UK Custom Clothing &amp; Merchandise
-    </div>
+<section id="hero" aria-label="Featured work" aria-roledescription="carousel">
+  <div class="hero-slides">
 
-    <h1 class="hero-h1">
-      <span class="split-line"><span class="split-line-inner">Custom merch your</span></span>
-      <span class="split-line"><span class="split-line-inner">brand will <em>actually</em></span></span>
-      <span class="split-line"><span class="split-line-inner">be proud of.</span></span>
-    </h1>
-
-    <p class="hero-sub">
-      From first concept to UK delivery — premium clothing, branded merchandise and full production, built on Pakistani textile heritage and finished to global brand standards.
-    </p>
-
-    <div class="hero-actions">
-      <a href="contact.html" class="btn-primary magnetic">Start a Project <span>→</span></a>
-      <a href="portfolio.html" class="btn-secondary magnetic">See Our Work</a>
-    </div>
-
-    <div class="hero-social-proof">
-      <div class="proof-avatars">
-        <div class="proof-avatar"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=64&q=80&fit=crop" alt="Client" loading="lazy"></div>
-        <div class="proof-avatar"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=64&q=80&fit=crop" alt="Client" loading="lazy"></div>
-        <div class="proof-avatar"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=64&q=80&fit=crop" alt="Client" loading="lazy"></div>
-        <div class="proof-avatar"><img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=64&q=80&fit=crop" alt="Client" loading="lazy"></div>
+    <article class="hero-slide is-active" aria-roledescription="slide" aria-label="1 of 3">
+      <div class="hero-slide-bg">
+        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp_webp/1f1a5b24352097.56332ddcb5d97.jpg" alt="Premium custom embroidered garment made by Safir Wear" loading="eager" fetchpriority="high">
       </div>
-      <div class="proof-text">
-        <strong>500+ brands served across the UK</strong>
-        <span>Rated 4.9 / 5 by our clients</span>
+      <div class="hero-content">
+        <div class="hero-eyebrow">New — Heritage Collection</div>
+        <h1 class="hero-h1">Custom merch<br>your brand<br>is proud of</h1>
+        <p class="hero-sub">Bespoke clothing &amp; branded merchandise — crystals, hand-finishing and craft, made with care.</p>
+        <div class="hero-actions">
+          <a href="contact.html" class="btn-primary magnetic">Start a Project <span>→</span></a>
+          <a href="portfolio.html" class="btn-secondary magnetic">See Our Work</a>
+        </div>
       </div>
-    </div>
+    </article>
+
+    <article class="hero-slide" aria-roledescription="slide" aria-label="2 of 3" aria-hidden="true">
+      <div class="hero-slide-bg">
+        <img src="https://a.storyblok.com/f/165154/1280x720/a226bb1c8f/02_fleece-hoodie-material.jpg" alt="Premium custom fleece hoodies manufactured for UK clothing brands" loading="lazy">
+      </div>
+      <div class="hero-content">
+        <div class="hero-eyebrow">Custom Clothing</div>
+        <h1 class="hero-h1">Garments<br>built to<br>last</h1>
+        <p class="hero-sub">Hoodies, tees, joggers and workwear — manufactured to your exact spec with strict in-house QC.</p>
+        <div class="hero-actions">
+          <a href="services.html" class="btn-primary magnetic">Our Services <span>→</span></a>
+          <a href="portfolio.html" class="btn-secondary magnetic">See Our Work</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="hero-slide" aria-roledescription="slide" aria-label="3 of 3" aria-hidden="true">
+      <div class="hero-slide-bg">
+        <img src="https://www.intelligentchange.com/cdn/shop/products/4X5-WebRes-Intelligent-Change-Tote-Bags-1_301b012d-03b9-4917-96ff-e911c5783d56.jpg?v=1671127106&width=1120" alt="Branded merchandise and promotional items for UK businesses" loading="lazy">
+      </div>
+      <div class="hero-content">
+        <div class="hero-eyebrow">Branded Merchandise</div>
+        <h1 class="hero-h1">Merch they<br>actually<br>keep</h1>
+        <p class="hero-sub">Bags, accessories and lifestyle items that make your brand tangible — designed to be wanted, not binned.</p>
+        <div class="hero-actions">
+          <a href="contact.html" class="btn-primary magnetic">Get a Quote <span>→</span></a>
+          <a href="portfolio.html" class="btn-secondary magnetic">See Our Work</a>
+        </div>
+      </div>
+    </article>
+
   </div>
 
-  <div class="hero-right">
-    <div class="hero-visual-grid">
-      <div class="hv-item">
-        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp_webp/1f1a5b24352097.56332ddcb5d97.jpg" alt="Custom branded hoodie made for UK brands by Safir Wear" loading="eager" fetchpriority="high">
-        <div class="hv-tag">Custom Clothing</div>
-      </div>
-      <div class="hv-item">
-        <img src="https://janesstall.co.uk/wp-content/uploads/2026/02/1AE3AB2F-C88E-4E07-8EC3-954FD46A4A5C-1.jpeg" alt="Custom branded t-shirt for UK clothing brand" loading="lazy">
-        <div class="hv-tag">Tees &amp; Apparel</div>
-      </div>
-      <div class="hv-item">
-        <img src="https://www.intelligentchange.com/cdn/shop/products/4X5-WebRes-Intelligent-Change-Tote-Bags-1_301b012d-03b9-4917-96ff-e911c5783d56.jpg?v=1671127106&width=1120" alt="Branded merchandise and promotional tote bags for UK businesses" loading="lazy">
-        <div class="hv-tag">Merchandise</div>
-      </div>
+  <div class="hero-ui">
+    <button class="hero-arrow" id="heroPrev" aria-label="Previous slide">←</button>
+    <div class="hero-dots" id="heroDots" role="tablist" aria-label="Slides">
+      <button class="hero-dot is-active" aria-label="Go to slide 1"></button>
+      <button class="hero-dot" aria-label="Go to slide 2"></button>
+      <button class="hero-dot" aria-label="Go to slide 3"></button>
     </div>
-    <div class="hero-badge">
-      <div class="badge-num">48h</div>
-      <div class="badge-label">Sample turnaround</div>
-    </div>
+    <div class="hero-count"><span id="heroIdx">01</span> <span class="hero-count-sep">/</span> 03</div>
+    <button class="hero-arrow" id="heroNext" aria-label="Next slide">→</button>
   </div>
 </section>
 
@@ -342,255 +347,162 @@
   </div>
 </div>
 
-<!-- ─── STATS ─── -->
-<div class="stats-strip">
-  <div class="stat-box">
-    <div class="stat-n" data-static="ISO Certified">ISO Certified</div>
-    <div class="stat-l">Quality Standard</div>
-  </div>
-  <div class="stat-box">
-    <div class="stat-n" data-target="100" data-suffix="h">0</div>
-    <div class="stat-l">Sample turnaround</div>
-  </div>
-  <div class="stat-box">
-    <div class="stat-n" data-target="100" data-suffix="%">0</div>
-    <div class="stat-l">UK quality assured</div>
-  </div>
-  <div class="stat-box">
-    <div class="stat-n" data-target="12" data-suffix="+">0</div>
-    <div class="stat-l">Years of craft</div>
-  </div>
-</div>
-
 <!-- ═══════════════════════════════════════
-     SERVICES
+     CATALOG — capability showcase (B2B, no prices)
 ════════════════════════════════════════ -->
-<section id="services" class="section">
-  <div class="sh-row">
-    <div>
-      <div class="tag rv">What We Do</div>
-      <h2 class="section-h rv d1">Everything your brand<br>needs, under one roof.</h2>
-    </div>
-    <p class="section-sub rv d2">
-      Concept, design, sampling, production, branding, and UK fulfilment. One partner. No handoffs. No surprises.
-    </p>
+<section id="catalog" class="section">
+  <div class="cat-head">
+    <h2 class="heading-lg">What We Make <span class="section-index">[06]</span></h2>
+    <a href="services.html" class="btn-secondary magnetic">All Services →</a>
   </div>
 
-  <div class="svc-grid">
-    <div class="svc-card tilt">
-      <div class="svc-icon">👕</div>
-      <div class="svc-num-badge">01</div>
-      <div class="svc-n">Custom Clothing</div>
-      <p class="svc-t">Bespoke garments designed and manufactured to your exact specifications. Hoodies, tees, joggers, workwear — built from the ground up.</p>
-    </div>
-    <div class="svc-card tilt">
-      <div class="svc-icon">🎒</div>
-      <div class="svc-num-badge">02</div>
-      <div class="svc-n">Merchandise</div>
-      <p class="svc-t">Branded merch people actually want to keep. Bags, accessories, lifestyle items — designed to make your brand tangible and memorable.</p>
-    </div>
-    <div class="svc-card tilt">
-      <div class="svc-icon">🔬</div>
-      <div class="svc-num-badge">03</div>
-      <div class="svc-n">Sampling</div>
-      <p class="svc-t">See, feel, and approve before you commit. Our rapid sampling process protects your vision before a single unit enters production.</p>
-    </div>
-    <div class="svc-card tilt">
-      <div class="svc-icon">🏭</div>
-      <div class="svc-num-badge">04</div>
-      <div class="svc-n">Production</div>
-      <p class="svc-t">Full-scale runs with strict QC at every stage. Minimum orders to maximum volumes — the same standard throughout.</p>
-    </div>
-    <div class="svc-card tilt">
-      <div class="svc-icon">✏️</div>
-      <div class="svc-num-badge">05</div>
-      <div class="svc-n">Brand Identity</div>
-      <p class="svc-t">Labels, hangtags, packaging, lookbooks. Every touch point crafted so your product speaks your brand language fluently.</p>
-    </div>
-    <div class="svc-card tilt">
-      <div class="svc-icon">📦</div>
-      <div class="svc-num-badge">06</div>
-      <div class="svc-n">UK Fulfilment</div>
-      <p class="svc-t">Warehouse, pick, pack, dispatch — to your door or direct to your customers. UK-based logistics so your launch never slips.</p>
-    </div>
-  </div>
-
-  <div style="text-align:center; margin-top:48px;">
-    <a href="services.html" class="btn-secondary magnetic rv d3">View All Services →</a>
+  <div class="cat-grid">
+    <a href="services.html" class="cat-card">
+      <div class="cat-card-media">
+        <img src="https://a.storyblok.com/f/165154/1280x720/a226bb1c8f/02_fleece-hoodie-material.jpg" alt="Premium custom fleece hoodies manufactured for UK clothing brands" loading="lazy">
+        <span class="cat-fav" aria-hidden="true">♡</span>
+      </div>
+      <div class="cat-card-foot">
+        <div class="cat-card-name">Premium Hoodies</div>
+        <div class="cat-card-meta">Custom Clothing</div>
+      </div>
+    </a>
+    <a href="services.html" class="cat-card">
+      <div class="cat-card-media">
+        <img src="https://thepridecolors.com/cdn/shop/products/mockup-of-a-young-woman-wearing-an-oversized-sweatshirt-on-the-street-m25290_1.png?v=1651565685" alt="Custom branded sweatshirts and apparel for UK brands" loading="lazy">
+        <span class="cat-fav" aria-hidden="true">♡</span>
+      </div>
+      <div class="cat-card-foot">
+        <div class="cat-card-name">Sweats &amp; Crews</div>
+        <div class="cat-card-meta">Custom Clothing</div>
+      </div>
+    </a>
+    <a href="services.html" class="cat-card">
+      <div class="cat-card-media">
+        <img src="https://d1l2kcmc130e06.cloudfront.net/blog/images/content/ba/banner_tshrts.jpg" alt="Custom printed t-shirts for UK businesses and events" loading="lazy">
+        <span class="cat-fav" aria-hidden="true">♡</span>
+      </div>
+      <div class="cat-card-foot">
+        <div class="cat-card-name">Custom Tees</div>
+        <div class="cat-card-meta">Apparel</div>
+      </div>
+    </a>
+    <a href="services.html" class="cat-card">
+      <div class="cat-card-media">
+        <img src="https://www.intelligentchange.com/cdn/shop/products/4X5-WebRes-Intelligent-Change-Tote-Bags-1_301b012d-03b9-4917-96ff-e911c5783d56.jpg?v=1671127106&width=1120" alt="Branded merchandise and promotional tote bags for UK businesses" loading="lazy">
+        <span class="cat-fav" aria-hidden="true">♡</span>
+      </div>
+      <div class="cat-card-foot">
+        <div class="cat-card-name">Branded Merch</div>
+        <div class="cat-card-meta">Merchandise</div>
+      </div>
+    </a>
+    <a href="services.html" class="cat-card">
+      <div class="cat-card-media">
+        <img src="https://i.pinimg.com/736x/30/4f/cd/304fcd80a9a6f0bad499b147444b70f1.jpg" alt="Custom corporate workwear uniforms for UK businesses" loading="lazy">
+        <span class="cat-fav" aria-hidden="true">♡</span>
+      </div>
+      <div class="cat-card-foot">
+        <div class="cat-card-name">Workwear</div>
+        <div class="cat-card-meta">Custom Clothing</div>
+      </div>
+    </a>
+    <a href="services.html" class="cat-card">
+      <div class="cat-card-media">
+        <img src="https://m.bbb.org/prod/corecmsimages/2023/fbf48e21-da4b-4efa-87b1-6c77e46d4f21.jpg?tx=w_763" alt="Custom team kits and sports kits for UK clubs and organisations" loading="lazy">
+        <span class="cat-fav" aria-hidden="true">♡</span>
+      </div>
+      <div class="cat-card-foot">
+        <div class="cat-card-name">Team Kits</div>
+        <div class="cat-card-meta">Custom Clothing</div>
+      </div>
+    </a>
   </div>
 </section>
 
-<!-- ─── HORIZONTAL SCROLL TEXT ─── -->
-<div class="horiz-text">
-  <div class="horiz-text-inner">
-    <span class="horiz-text-item">Design</span>
-    <span class="horiz-text-sep">•</span>
-    <span class="horiz-text-item">Sample</span>
-    <span class="horiz-text-sep">•</span>
-    <span class="horiz-text-item">Produce</span>
-    <span class="horiz-text-sep">•</span>
-    <span class="horiz-text-item">Deliver</span>
-    <span class="horiz-text-sep">•</span>
-    <span class="horiz-text-item">Repeat</span>
-    <span class="horiz-text-sep">•</span>
-    <span class="horiz-text-item">Design</span>
-    <span class="horiz-text-sep">•</span>
-    <span class="horiz-text-item">Sample</span>
-    <span class="horiz-text-sep">•</span>
-    <span class="horiz-text-item">Produce</span>
+<!-- ═══════════════════════════════════════
+     ABOUT THE BRAND — burgundy panels
+════════════════════════════════════════ -->
+<section id="brand" class="section">
+  <h2 class="heading-lg brand-title">The Brand</h2>
+
+  <div class="brand-grid">
+    <div class="brand-panel">
+      <div class="brand-panel-tag">[ Who we are ]</div>
+      <div class="brand-panel-img">
+        <img src="https://rijiz.co/wp-content/uploads/2025/07/t-shirts-1024x683.webp" alt="Safir Wear apparel manufacturing facility" loading="lazy">
+      </div>
+      <p class="brand-panel-text">
+        We sit where Pakistani textile mastery meets UK brand culture. Bespoke
+        embroidery, hand-finishing and crafted detail — we see real craft, and we
+        bring it within reach for brands that care about their product.
+      </p>
+    </div>
+
+    <div class="brand-feature">
+      <img src="https://janesstall.co.uk/wp-content/uploads/2026/02/1AE3AB2F-C88E-4E07-8EC3-954FD46A4A5C-1.jpeg" alt="Detail of a hand-finished custom garment by Safir Wear" loading="lazy">
+    </div>
+
+    <div class="brand-panel">
+      <div class="brand-panel-tag">[ What we do ]</div>
+      <div class="brand-panel-img">
+        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp_webp/1f1a5b24352097.56332ddcb5d97.jpg" alt="Custom branded garment produced by Safir Wear" loading="lazy">
+      </div>
+      <p class="brand-panel-text">
+        Every Safir Wear piece is assembled with attention and respect for the
+        detail — by people who genuinely love the craft. Concept, design, sampling,
+        production, branding, fulfilment. One partner, no handoffs.
+      </p>
+    </div>
   </div>
-</div>
+
+  <div class="brand-stats">
+    <div class="brand-stat">
+      <div class="bs-n" data-static="ISO Certified">ISO Certified</div>
+      <div class="bs-l">Quality Standard</div>
+    </div>
+    <div class="brand-stat">
+      <div class="bs-n" data-target="48" data-suffix="h">0</div>
+      <div class="bs-l">Sample turnaround</div>
+    </div>
+    <div class="brand-stat">
+      <div class="bs-n" data-target="100" data-suffix="%">0</div>
+      <div class="bs-l">UK quality assured</div>
+    </div>
+    <div class="brand-stat">
+      <div class="bs-n" data-target="12" data-suffix="+">0</div>
+      <div class="bs-l">Years of craft</div>
+    </div>
+  </div>
+</section>
 
 <!-- ═══════════════════════════════════════
      PROCESS
 ════════════════════════════════════════ -->
-<section id="process" class="section-full">
-  <div class="inner">
-    <div class="sh-row">
-      <div>
-        <div class="tag rv">How It Works</div>
-        <h2 class="section-h rv d1">Simple process.<br>Premium outcome.</h2>
-      </div>
-      <p class="section-sub rv d2">
-        Four clear steps from brief to brand in your hands — no confusion, no delays, no excuses.
-      </p>
-    </div>
-    <div class="proc-grid">
-      <div class="proc-step rv">
-        <div class="proc-num">01</div>
-        <div class="proc-title">Brief &amp; Vision</div>
-        <p class="proc-text">Share your brand story, product idea, and goals. We turn it into a production brief that leaves zero room for guesswork.</p>
-        <div class="proc-arrow"><svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M1.5 4h5M4 1.5l2.5 2.5L4 6.5" stroke="rgba(10,10,10,0.3)" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-      </div>
-      <div class="proc-step rv d1">
-        <div class="proc-num">02</div>
-        <div class="proc-title">Design &amp; Sample</div>
-        <p class="proc-text">We develop tech specs and build a physical sample. You see and approve it in your hands — before any production starts.</p>
-        <div class="proc-arrow"><svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M1.5 4h5M4 1.5l2.5 2.5L4 6.5" stroke="rgba(10,10,10,0.3)" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-      </div>
-      <div class="proc-step rv d2">
-        <div class="proc-num">03</div>
-        <div class="proc-title">Produce &amp; QC</div>
-        <p class="proc-text">Pakistani textile expertise meets modern QC. Every piece is checked before it ships — consistent quality at every scale.</p>
-        <div class="proc-arrow"><svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M1.5 4h5M4 1.5l2.5 2.5L4 6.5" stroke="rgba(10,10,10,0.3)" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-      </div>
-      <div class="proc-step rv d3">
-        <div class="proc-num">04</div>
-        <div class="proc-title">Deliver &amp; Launch</div>
-        <p class="proc-text">Quality-checked, packaged to spec, dispatched from the UK — to your warehouse or directly to your customers' doors.</p>
-      </div>
-    </div>
+<section id="process" class="section">
+  <div class="cat-head">
+    <h2 class="heading-lg">How It Works <span class="section-index">[04]</span></h2>
   </div>
-</section>
-
-<!-- ═══════════════════════════════════════
-     PORTFOLIO
-════════════════════════════════════════ -->
-<section id="portfolio" class="section">
-  <div class="sh-row">
-    <div>
-      <div class="tag rv">Our Work</div>
-      <h2 class="section-h rv d1">Products built<br>to last — and impress.</h2>
+  <div class="proc-grid">
+    <div class="proc-step rv">
+      <div class="proc-num">01</div>
+      <div class="proc-title">Brief &amp; Vision</div>
+      <p class="proc-text">Share your brand story and goals. We turn it into a production brief that leaves zero room for guesswork.</p>
     </div>
-    <a href="portfolio.html" class="btn-primary rv d2 magnetic" style="align-self:flex-end;flex-shrink:0;">View Full Portfolio →</a>
-  </div>
-
-  <div class="port-grid">
-    <div class="port-item">
-      <img src="https://a.storyblok.com/f/165154/1280x720/a226bb1c8f/02_fleece-hoodie-material.jpg" alt="Premium custom fleece hoodies manufactured for UK clothing brands" loading="lazy">
-      <div class="port-overlay"><span class="port-label">Premium Hoodies</span></div>
+    <div class="proc-step rv d1">
+      <div class="proc-num">02</div>
+      <div class="proc-title">Design &amp; Sample</div>
+      <p class="proc-text">We develop tech specs and build a physical sample. You see and approve it before any production starts.</p>
     </div>
-    <div class="port-item">
-      <img src="https://thepridecolors.com/cdn/shop/products/mockup-of-a-young-woman-wearing-an-oversized-sweatshirt-on-the-street-m25290_1.png?v=1651565685" alt="Custom branded merchandise range for UK brand and retail" loading="lazy">
-      <div class="port-overlay"><span class="port-label">Merch Range</span></div>
+    <div class="proc-step rv d2">
+      <div class="proc-num">03</div>
+      <div class="proc-title">Produce &amp; QC</div>
+      <p class="proc-text">Pakistani textile expertise meets modern QC. Every piece is checked before it ships — at every scale.</p>
     </div>
-    <div class="port-item">
-      <img src="https://d1l2kcmc130e06.cloudfront.net/blog/images/content/ba/banner_tshrts.jpg" alt="Custom printed t-shirts for UK businesses and events" loading="lazy">
-      <div class="port-overlay"><span class="port-label">Custom Tees</span></div>
-    </div>
-    <div class="port-item">
-      <img src="https://i.pinimg.com/736x/30/4f/cd/304fcd80a9a6f0bad499b147444b70f1.jpg" alt="Custom corporate workwear uniforms for UK businesses" loading="lazy">
-      <div class="port-overlay"><span class="port-label">Workwear</span></div>
-    </div>
-    <div class="port-item">
-      <img src="https://m.bbb.org/prod/corecmsimages/2023/fbf48e21-da4b-4efa-87b1-6c77e46d4f21.jpg?tx=w_763" alt="Custom team kits and sports kits for UK clubs and organisations" loading="lazy">
-      <div class="port-overlay"><span class="port-label">Team Kits</span></div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════════
-     WHY
-════════════════════════════════════════ -->
-<section id="why" class="section-full">
-  <div class="inner">
-    <div class="why-layout">
-      <div>
-        <div class="tag rv">Why Safir Wear</div>
-        <h2 class="section-h rv d1">Not just a manufacturer.<br>A brand partner.</h2>
-        <p class="section-sub rv d2" style="max-width:100%;margin-bottom:40px;">
-          We were built at the intersection of Pakistani textile mastery and UK brand culture. That gives our clients something no generic supplier can match.
-        </p>
-        <div class="why-features">
-          <div class="why-feat">
-            <div class="why-feat-icon">🧵</div>
-            <div>
-              <div class="why-feat-title">Factory-grade production, brand-level finish</div>
-              <p class="why-feat-text">High-capacity machinery, skilled operators, and strict in-house QC — built to deliver consistent quality at every order size.</p>
-            </div>
-          </div>
-          <div class="why-feat">
-            <div class="why-feat-icon">🇬🇧</div>
-            <div>
-              <div class="why-feat-title">UK-based and accountable</div>
-              <p class="why-feat-text">Real people to call. Real timelines to hold us to. UK-standard QA on every order before it leaves our facility.</p>
-            </div>
-          </div>
-          <div class="why-feat">
-            <div class="why-feat-icon">🔗</div>
-            <div>
-              <div class="why-feat-title">Truly end-to-end</div>
-              <p class="why-feat-text">Concept, design, sampling, production, branding, packaging, fulfilment. One relationship. No handoffs. No surprises.</p>
-            </div>
-          </div>
-          <div class="why-feat">
-            <div class="why-feat-icon">🎯</div>
-            <div>
-              <div class="why-feat-title">Built for brands, not bulk</div>
-              <p class="why-feat-text">We work with brands that care about their product. If brand integrity matters to you, you're in exactly the right place.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="why-right-col">
-        <div class="why-big-card rv">
-          <div class="wbc-label">Manufacturing Capabilities</div>
-          <div class="wbc-title">Industrial-scale production.<br>Zero compromise on quality.</div>
-          <p class="wbc-text">Our state-of-the-art facility runs high-capacity cutting, sewing, and finishing lines — capable of handling small MOQs through to large brand runs with the same precision at every stage. Full in-house QC, modern machinery, and a skilled workforce means your order is never outsourced, never delayed, never diluted.</p>
-          <div class="parallax-wrap" style="border-radius:var(--radius-sm); margin-top:28px; height:220px;">
-            <img src="https://rijiz.co/wp-content/uploads/2025/07/t-shirts-1024x683.webp" alt="Apparel manufacturing facility with sewing machines" class="parallax-img" loading="lazy">
-          </div>
-        </div>
-        <div class="why-stats-row">
-          <div class="why-mini-card rv d1">
-            <div class="wmc-n">500+</div>
-            <div class="wmc-l">Projects delivered</div>
-          </div>
-          <div class="why-mini-card rv d2">
-            <div class="wmc-n">48h</div>
-            <div class="wmc-l">Sample turnaround</div>
-          </div>
-          <div class="why-mini-card rv d3">
-            <div class="wmc-n">12+</div>
-            <div class="wmc-l">Years of craft</div>
-          </div>
-          <div class="why-mini-card rv d4">
-            <div class="wmc-n">100%</div>
-            <div class="wmc-l">UK quality assured</div>
-          </div>
-        </div>
-      </div>
+    <div class="proc-step rv d3">
+      <div class="proc-num">04</div>
+      <div class="proc-title">Deliver &amp; Launch</div>
+      <p class="proc-text">Quality-checked, packaged to spec, dispatched from the UK — to your warehouse or your customers.</p>
     </div>
   </div>
 </section>
@@ -599,50 +511,35 @@
      TESTIMONIALS
 ════════════════════════════════════════ -->
 <section id="testimonials" class="section">
-  <div class="sh-row" style="margin-bottom:40px;">
-    <div>
-      <div class="tag rv">Reviews</div>
-      <h2 class="section-h rv d1">Don't take our word for it.</h2>
-    </div>
+  <div class="cat-head">
+    <h2 class="heading-lg">Reviews <span class="section-index">[03]</span></h2>
   </div>
-
   <div class="test-grid">
-    <div class="test-card tilt">
-      <div class="test-stars">
-        <span class="test-star">&#9733;</span><span class="test-star">&#9733;</span><span class="test-star">&#9733;</span><span class="test-star">&#9733;</span><span class="test-star">&#9733;</span>
-      </div>
-      <p class="test-q">"Safir completely transformed how our brand shows up. The samples alone sold us — fabric weight, stitching detail, everything exactly right. Launch hit on time."</p>
-      <div class="test-author">
-        <div class="test-av"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=72&q=80&fit=crop" alt="James"></div>
-        <div>
+    <div class="test-card">
+      <div class="test-media"><img src="assets/placeholder.svg" alt="" loading="lazy"></div>
+      <div class="test-body">
+        <p class="test-q">"Safir completely transformed how our brand shows up. The samples alone sold us — fabric weight, stitching detail, everything exactly right. Launch hit on time."</p>
+        <div class="test-author">
           <div class="test-name">James Mitchell</div>
           <div class="test-role">Founder, Meridian Apparel</div>
         </div>
       </div>
     </div>
-
-    <div class="test-card tilt">
-      <div class="test-stars">
-        <span class="test-star">&#9733;</span><span class="test-star">&#9733;</span><span class="test-star">&#9733;</span><span class="test-star">&#9733;</span><span class="test-star">&#9733;</span>
-      </div>
-      <p class="test-q">"We'd worked with three suppliers before Safir. None of them understood what 'brand' meant. Safir got it on the first call. The range they built actually elevated us."</p>
-      <div class="test-author">
-        <div class="test-av"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=72&q=80&fit=crop" alt="Sophia"></div>
-        <div>
+    <div class="test-card">
+      <div class="test-media"><img src="assets/placeholder.svg" alt="" loading="lazy"></div>
+      <div class="test-body">
+        <p class="test-q">"We'd worked with three suppliers before Safir. None of them understood what 'brand' meant. Safir got it on the first call. The range they built elevated us."</p>
+        <div class="test-author">
           <div class="test-name">Sophia Reyes</div>
           <div class="test-role">Creative Director, Studio Bloc</div>
         </div>
       </div>
     </div>
-
-    <div class="test-card tilt">
-      <div class="test-stars">
-        <span class="test-star">&#9733;</span><span class="test-star">&#9733;</span><span class="test-star">&#9733;</span><span class="test-star">&#9733;</span><span class="test-star">&#9733;</span>
-      </div>
-      <p class="test-q">"Tight deadlines, specific requirements, zero tolerance for substandard work. Safir delivered on all three. Every person on our team asked where the workwear came from."</p>
-      <div class="test-author">
-        <div class="test-av"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=72&q=80&fit=crop" alt="Daniel"></div>
-        <div>
+    <div class="test-card">
+      <div class="test-media"><img src="assets/placeholder.svg" alt="" loading="lazy"></div>
+      <div class="test-body">
+        <p class="test-q">"Tight deadlines, specific requirements, zero tolerance for substandard work. Safir delivered on all three. Every person on our team asked where the workwear came from."</p>
+        <div class="test-author">
           <div class="test-name">Daniel Khoury</div>
           <div class="test-role">MD, Khoury Sport</div>
         </div>
@@ -659,13 +556,13 @@
     <div class="cta-tag rv">Get Started</div>
     <h2 class="cta-h rv d1">
       <span class="split-line"><span class="split-line-inner">Ready to build something</span></span>
-      <span class="split-line"><span class="split-line-inner">your brand is <em>proud of?</em></span></span>
+      <span class="split-line"><span class="split-line-inner">your brand is proud of?</span></span>
     </h2>
     <p class="cta-sub rv d2">
       Tell us about your project. We'll come back with a plan, a timeline, and a quote — fast.
     </p>
     <div class="cta-btns rv d3">
-      <a href="contact.html" class="btn-cta-lg magnetic">Start a Project <span>→</span></a>
+      <a href="contact.html" class="btn-primary magnetic">Start a Project <span>→</span></a>
       <a href="tel:+440000000000" class="btn-cta-ghost magnetic">Call Us</a>
     </div>
   </div>
@@ -678,7 +575,9 @@
   <div class="foot-inner">
     <div class="foot-top">
       <div>
-        <div class="foot-logo">SW / Safir Wear</div>
+        <a href="index.html" class="foot-logo" aria-label="Safir Wear — home">
+          <img src="assets/logo-lockup.png" alt="Safir Wear">
+        </a>
         <p class="foot-desc">Premium custom clothing and merchandise for UK brands. Pakistani textile heritage, delivered with British precision.</p>
         <div class="foot-socials">
           <a href="#" class="soc" aria-label="Instagram">IG</a>
