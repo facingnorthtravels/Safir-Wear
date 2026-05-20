@@ -17,7 +17,9 @@
       "Bash(cp /tmp/sw-hero.png \"/d/safir-wear/_sw-hero.png\")",
       "Bash(\"/c/Program Files/Google/Chrome/Application/chrome.exe\" --headless --disable-gpu --hide-scrollbars --window-size=1440,4200 --disable-javascript --screenshot=/tmp/sw-nojs.png \"http://localhost:8765/index.html\")",
       "Bash(cp /tmp/sw-nojs.png \"/d/safir-wear/_sw-nojs.png\")",
-      "Bash(node _cdp-shot.js _sw-full.png)"
+      "Bash(node _cdp-shot.js _sw-full.png)",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)"
     ]
   }
 }
