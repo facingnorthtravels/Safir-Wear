@@ -115,6 +115,12 @@
     let timer = null;
     const INTERVAL = 6000;
 
+    function applyLightMode() {
+      const isLight = slides[cur].classList.contains('hero-slide--light');
+      hero.classList.toggle('hero--light', isLight);
+      document.body.classList.toggle('hero-light', isLight);
+    }
+
     function show(n) {
       n = (n + slides.length) % slides.length;
       if (n === cur) return;
@@ -126,6 +132,7 @@
       slides[cur].removeAttribute('aria-hidden');
       dots[cur] && dots[cur].classList.add('is-active');
       if (idxEl) idxEl.textContent = String(cur + 1).padStart(2, '0');
+      applyLightMode();
     }
     const next = () => show(cur + 1);
     const prev = () => show(cur - 1);
@@ -148,6 +155,7 @@
       document.hidden ? stop() : start();
     });
 
+    applyLightMode();
     start();
   }
 

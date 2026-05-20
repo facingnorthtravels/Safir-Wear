@@ -465,6 +465,43 @@ nav.stuck .nav-logo img { filter: none; height: 26px; }
   pointer-events: none;
 }
 
+/* Light-mode slide: airy photo with negative space → use charcoal text,
+   soft warm wash on the text side instead of darkening the whole image. */
+.hero-slide--light .hero-slide-bg img {
+  object-position: 70% center; /* keep the right-side subject in frame */
+}
+.hero-slide--light::after {
+  background:
+    linear-gradient(100deg, rgba(245,247,248,.92) 0%, rgba(245,247,248,.55) 38%, rgba(245,247,248,0) 64%),
+    linear-gradient(to top, rgba(245,247,248,.55) 0%, transparent 40%);
+}
+.hero-slide--light .hero-eyebrow { color: var(--accent); }
+.hero-slide--light .hero-h1      { color: var(--ink); }
+.hero-slide--light .hero-sub     { color: var(--ink-2); }
+.hero-slide--light .hero-actions .btn-primary {
+  background: var(--ink); color: #FCFDFD;
+}
+.hero-slide--light .hero-actions .btn-primary::before { background: rgba(255,255,255,.14); }
+.hero-slide--light .hero-actions .btn-secondary {
+  color: var(--ink); border-bottom-color: var(--ink);
+}
+.hero-slide--light .hero-actions .btn-secondary:hover { opacity: .6; }
+
+/* When the active slide is light, JS adds .hero--light on #hero AND
+   .hero-light on <body>. The hero-scoped class restyles the slideshow
+   UI strip; the body class restyles the (DOM-earlier) navbar. */
+.hero--light .hero-arrow {
+  border-color: rgba(42,48,54,.35); color: var(--ink);
+}
+.hero--light .hero-arrow:hover { background: var(--ink); color: #FCFDFD; border-color: var(--ink); }
+.hero--light .hero-dot { background: rgba(42,48,54,.25); }
+.hero--light .hero-dot.is-active { background: var(--ink); }
+.hero--light .hero-count { color: var(--ink-2); }
+.hero--light .hero-count-sep { color: var(--ink-3); }
+/* Navbar over a light hero slide — only when not stuck (stuck has its own style). */
+body.hero-light nav:not(.stuck) { color: var(--ink); }
+body.hero-light nav:not(.stuck) .nav-logo img { filter: none; }
+
 /* Slide content — bottom-left, single column, no overlaps */
 .hero-content {
   position: absolute; left: 0; bottom: 0;
